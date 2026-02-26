@@ -171,10 +171,10 @@ export function WelcomePacket({
           </div>
           <div className="welcome-values">
             <h3>Our Core Commitments</h3>
-            <ValueItem icon="\u{1F9ED}" title="Fiduciary First" desc="We are legally and ethically required to act in your best interest — always." />
-            <ValueItem icon="\u{1F512}" title="Transparency" desc="No hidden fees, no surprises. We clearly explain every recommendation and cost." />
-            <ValueItem icon="\u{1F91D}" title="Long-Term Partnership" desc="We grow with you — through life changes, market shifts, and every milestone ahead." />
-            <ValueItem icon="\u{1F3D4}\uFE0F" title="Personalized Strategy" desc="Your financial plan is built for your life — not templated from a shelf." />
+            <ValueItem icon="🧭" title="Fiduciary First" desc="We are legally and ethically required to act in your best interest — always." />
+            <ValueItem icon="🔒" title="Transparency" desc="No hidden fees, no surprises. We clearly explain every recommendation and cost." />
+            <ValueItem icon="🤝" title="Long-Term Partnership" desc="We grow with you — through life changes, market shifts, and every milestone ahead." />
+            <ValueItem icon="🏔️" title="Personalized Strategy" desc="Your financial plan is built for your life — not templated from a shelf." />
           </div>
         </div>
       </div>
@@ -184,11 +184,11 @@ export function WelcomePacket({
         <SectionHeader num={2} eyebrow="Your Journey" title="What to Expect — Your Roadmap" />
         <div className="pipeline-wrapper">
           <div className="pipeline-track">
-            <PipelineStage icon="\u{1F50D}" label="Phase 1" badge="Weeks 1–2" title="Intro & Discovery" desc="We get to know each other and gather the full picture of your financial life — income, assets, liabilities, goals, and what matters most." />
+            <PipelineStage icon="🔍" label="Phase 1" badge="Weeks 1–2" title="Intro & Discovery" desc="We get to know each other and gather the full picture of your financial life — income, assets, liabilities, goals, and what matters most." />
             <PipelineConnector />
-            <PipelineStage icon="\u{1F5FA}\uFE0F" label="Phase 2" badge="Weeks 2–3" title="Roadmap & Alignment" desc="Our team builds your personalized financial plan — a strategic roadmap of priorities. We review it together and align on direction." />
+            <PipelineStage icon="🗺️" label="Phase 2" badge="Weeks 2–3" title="Roadmap & Alignment" desc="Our team builds your personalized financial plan — a strategic roadmap of priorities. We review it together and align on direction." />
             <PipelineConnector />
-            <PipelineStage icon="\u{1F680}" label="Phase 3" badge="Weeks 3–5" title="Implementation" desc="Planning turns into action — opening accounts, transferring assets, establishing positions, and setting everything in motion." />
+            <PipelineStage icon="🚀" label="Phase 3" badge="Weeks 3–5" title="Implementation" desc="Planning turns into action — opening accounts, transferring assets, establishing positions, and setting everything in motion." />
           </div>
           <div className="pipeline-row-connector">
             <svg viewBox="0 0 1000 48" preserveAspectRatio="none">
@@ -197,11 +197,11 @@ export function WelcomePacket({
             </svg>
           </div>
           <div className="pipeline-track">
-            <PipelineStage icon="\u2699\uFE0F" label="Phase 4" badge="Weeks 5–8" title="Optimization" desc="We tie investments, tax strategy, and cash flow together. Your CPA joins the team so everything works holistically and tax-efficiently." />
+            <PipelineStage icon="⚙️" label="Phase 4" badge="Weeks 5–8" title="Optimization" desc="We tie investments, tax strategy, and cash flow together. Your CPA joins the team so everything works holistically and tax-efficiently." />
             <PipelineConnector />
-            <PipelineStage icon="\u{1F6E1}\uFE0F" label="Phase 5" badge="Weeks 8–12" title="Integration" desc="We protect your wealth through estate planning and risk management, coordinate with professionals, and stress-test for the unexpected." />
+            <PipelineStage icon="🛡️" label="Phase 5" badge="Weeks 8–12" title="Integration" desc="We protect your wealth through estate planning and risk management, coordinate with professionals, and stress-test for the unexpected." />
             <PipelineConnector />
-            <PipelineStage icon="\u{1F91D}" label="Phase 6" badge="Always" title="Ongoing Partnership" desc="You move into our annual rhythm — biannual planning meetings, proactive check-in calls, and year-round coordination across your team." />
+            <PipelineStage icon="🤝" label="Phase 6" badge="Always" title="Ongoing Partnership" desc="You move into our annual rhythm — biannual planning meetings, proactive check-in calls, and year-round coordination across your team." />
           </div>
         </div>
 
@@ -250,10 +250,10 @@ export function WelcomePacket({
       <div className="section">
         <SectionHeader num={3} eyebrow="What Comes Next" title="Ongoing Service Preview" />
         <div className="ongoing-grid">
-          <OngoingCard icon="\u{1F331}" title="Spring Meeting" desc="Full review — plan updates, progress on action items, investment review, tax positioning, and any life changes since we last met." />
-          <OngoingCard icon="\u2600\uFE0F" title="Summer Call" desc="Proactive check-in — lighter touch to surface any emerging needs, share quick updates, and stay connected." />
-          <OngoingCard icon="\u{1F342}" title="Fall Meeting" desc="Year-end planning — tax-loss harvesting, Roth conversions, charitable giving, insurance renewals, and goal-setting for the year ahead." />
-          <OngoingCard icon="\u2744\uFE0F" title="Winter Call" desc="Year-end wrap-up — confirm final actions, personal connection, and make sure nothing slips through the cracks before the new year." />
+          <OngoingCard icon="🌱" title="Spring Meeting" desc="Full review — plan updates, progress on action items, investment review, tax positioning, and any life changes since we last met." />
+          <OngoingCard icon="☀️" title="Summer Call" desc="Proactive check-in — lighter touch to surface any emerging needs, share quick updates, and stay connected." />
+          <OngoingCard icon="🍂" title="Fall Meeting" desc="Year-end planning — tax-loss harvesting, Roth conversions, charitable giving, insurance renewals, and goal-setting for the year ahead." />
+          <OngoingCard icon="❄️" title="Winter Call" desc="Year-end wrap-up — confirm final actions, personal connection, and make sure nothing slips through the cracks before the new year." />
         </div>
         <div className="ongoing-note">
           <p>
@@ -270,7 +270,7 @@ export function WelcomePacket({
       <div className="section section-alt">
         <SectionHeader num={4} eyebrow="Who We Are" title="Your Team & Contacts" />
         <div className="team-grid">
-          <TeamCard name="Jake Cazier, CFP\u00AE" role="Private Wealth Advisor \u00B7 Owner" email="jake@canyonstrategicwealth.com" phone="(801) 903-8287" avatar="/packet/jake.jpg" />
+          <TeamCard name="Jake Cazier, CFP®" role="Private Wealth Advisor · Owner" email="jake@canyonstrategicwealth.com" phone="(801) 903-8287" avatar="/packet/jake.jpg" />
           <TeamCard name="Shawnee Lowry" role="Senior Client Relations Manager" email="shawnee@canyonstrategicwealth.com" phone="(385) 590-9757" avatar="/packet/shawnee.jpg" />
           <TeamCard name="Brizden Staker" role="Administrative Assistant" email="brizden@canyonstrategicwealth.com" initials="BS" />
         </div>
@@ -285,10 +285,10 @@ export function WelcomePacket({
           </div>
           <div className="contact-details">
             <div className="contact-detail">
-              {"\u{1F4DE}"} {advisorPhone}
+              {"📞"} {advisorPhone}
             </div>
             <div className="contact-detail">
-              {"\u2709\uFE0F"} {advisorEmail}
+              {"✉️"} {advisorEmail}
             </div>
           </div>
         </div>
@@ -300,7 +300,7 @@ export function WelcomePacket({
         <div className="next-steps-grid">
           <div className="checklist-group">
             <h3>
-              <span className="group-icon">{"\u{1F4CB}"}</span> Documents to Gather
+              <span className="group-icon">{"📋"}</span> Documents to Gather
             </h3>
             {documentItems.map((item, i) => (
               <CheckItem key={i} index={i} text={item.text} sub={item.sub} checked={checkedItems.has(i)} onToggle={toggleCheck} />
@@ -308,7 +308,7 @@ export function WelcomePacket({
           </div>
           <div className="checklist-group">
             <h3>
-              <span className="group-icon">{"\u2705"}</span> Action Items
+              <span className="group-icon">{"✅"}</span> Action Items
             </h3>
             {actionItems.map((item, i) => (
               <CheckItem key={i} index={i + 9} text={item.text} sub={item.sub} subLink={item.subLink} checked={checkedItems.has(i + 9)} onToggle={toggleCheck} />
@@ -321,7 +321,7 @@ export function WelcomePacket({
           target="_blank"
           rel="noopener noreferrer"
         >
-          {"\u{1F4E4}"} Upload Your Documents Securely
+          {"📤"} Upload Your Documents Securely
         </a>
         <div className="progress-bar-wrap">
           <div className="progress-label">Your Onboarding Progress</div>
@@ -382,19 +382,19 @@ export function WelcomePacket({
           </div>
         </div>
         <div className="hub-grid">
-          <HubCard icon="\u{1F3E6}" color="blue" title="Charles Schwab" desc="Log into your brokerage and investment accounts" badge="Log In \u2192" href="https://www.schwab.com/client-home" />
-          <HubCard icon="\u{1F4CA}" color="blue" title="eMoney" desc="View your financial plan, net worth, and projections" badge="Log In \u2192" href="https://wealth.emaplan.com/ema/SignIn" />
-          <HubCard icon="\u{1F4C4}" color="gold" title="Investment Fact Sheets" desc="Download detailed information on the investments we recommend" badge="Download \u2192" href="#" />
-          <HubCard icon="\u{1F4AC}" color="green" title="Quick Chat" desc="Have a quick question? Book a 15-minute call with Jake" badge="Schedule \u2192" href="https://calendly.com/jakecazier/client-quick-chat" />
-          <HubCard icon="\u{1F4C5}" color="green" title="Client Meeting" desc="Schedule a full meeting outside the regular onboarding flow" badge="Schedule \u2192" href="https://calendly.com/jakecazier/client-meeting-custom-calendar" />
-          <HubCard icon="\u2B50" color="purple" title="Leave Us a Review" desc="Your feedback means the world — share your experience on Google" badge="Review \u2192" href="#" />
+          <HubCard icon="🏦" color="blue" title="Charles Schwab" desc="Log into your brokerage and investment accounts" badge="Log In →" href="https://www.schwab.com/client-home" />
+          <HubCard icon="📊" color="blue" title="eMoney" desc="View your financial plan, net worth, and projections" badge="Log In →" href="https://wealth.emaplan.com/ema/SignIn" />
+          <HubCard icon="📄" color="gold" title="Investment Fact Sheets" desc="Download detailed information on the investments we recommend" badge="Download →" href="#" />
+          <HubCard icon="💬" color="green" title="Quick Chat" desc="Have a quick question? Book a 15-minute call with Jake" badge="Schedule →" href="https://calendly.com/jakecazier/client-quick-chat" />
+          <HubCard icon="📅" color="green" title="Client Meeting" desc="Schedule a full meeting outside the regular onboarding flow" badge="Schedule →" href="https://calendly.com/jakecazier/client-meeting-custom-calendar" />
+          <HubCard icon="⭐" color="purple" title="Leave Us a Review" desc="Your feedback means the world — share your experience on Google" badge="Review →" href="#" />
         </div>
         <div className="hub-contact-row">
           <a href={`mailto:${advisorEmail}`} className="hub-btn hub-btn-primary">
-            {"\u2709\uFE0F"} Email {advisorName.split(",")[0]}
+            {"✉️"} Email {advisorName.split(",")[0]}
           </a>
           <a href={`tel:${advisorPhone.replace(/\D/g, "")}`} className="hub-btn hub-btn-secondary">
-            {"\u{1F4F1}"} {advisorPhone}
+            {"📱"} {advisorPhone}
           </a>
         </div>
         <div className="hub-share-bar">
@@ -405,7 +405,7 @@ export function WelcomePacket({
             className={`share-copy-btn${copied ? " copied" : ""}`}
             onClick={copyShareLink}
           >
-            {copied ? "\u2705 Link Copied!" : "\u{1F4CB} Copy Link to Share"}
+            {copied ? "✅ Link Copied!" : "📋 Copy Link to Share"}
           </button>
         </div>
       </div>
@@ -495,7 +495,7 @@ function MeetingCard({ num, title, desc, link }: { num: number; title: string; d
       <div className="mc-title">{title}</div>
       <div className="mc-desc">{desc}</div>
       <a href={link} className="mc-link" target="_blank" rel="noopener noreferrer">
-        {"\u{1F4C5}"} Schedule
+        {"📅"} Schedule
       </a>
     </div>
   );
@@ -537,8 +537,8 @@ function TeamCard({ name, role, email, phone, avatar, initials }: { name: string
         <div className="team-name">{name}</div>
         <div className="team-role">{role}</div>
         <div className="team-contact">
-          <a href={`mailto:${email}`}>{"\u2709\uFE0F"} {email}</a>
-          {phone && <a href={`tel:${phone.replace(/\D/g, "")}`}>{"\u{1F4F1}"} {phone}</a>}
+          <a href={`mailto:${email}`}>{"✉️"} {email}</a>
+          {phone && <a href={`tel:${phone.replace(/\D/g, "")}`}>{"📱"} {phone}</a>}
         </div>
       </div>
     </div>
@@ -560,7 +560,7 @@ function CheckItem({ index, text, sub, subLink, checked, onToggle }: { index: nu
   return (
     <div className="check-item" onClick={() => onToggle(index)}>
       <div className={`checkbox${checked ? " checked" : ""}`}>
-        {checked ? "\u2713" : ""}
+        {checked ? "✓" : ""}
       </div>
       <div>
         <div className={`check-text${checked ? " done" : ""}`}>{text}</div>
@@ -599,9 +599,9 @@ const documentItems = [
 ];
 
 const actionItems = [
-  { text: "Schedule your Discovery Meeting", sub: "Book on Calendly \u2192", subLink: "https://calendly.com/jakecazier/discovery-meeting" },
+  { text: "Schedule your Discovery Meeting", sub: "Book on Calendly →", subLink: "https://calendly.com/jakecazier/discovery-meeting" },
   { text: "Gather your important documents", sub: "Use the checklist on the left as your guide" },
-  { text: "Upload documents securely", sub: "Secure upload portal \u2192", subLink: "https://canyonstrategicwealth.sharefile.com" },
+  { text: "Upload documents securely", sub: "Secure upload portal →", subLink: "https://canyonstrategicwealth.sharefile.com" },
   { text: "Reflect on the questions below", sub: "No right answers — just honest reflection to guide our planning" },
   { text: "Review & sign client agreement", sub: "DocuSign link sent to your email" },
 ];

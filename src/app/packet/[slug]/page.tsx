@@ -40,10 +40,14 @@ export default async function PacketPage({
     phone: string;
   } | null;
 
-  // Build display name
-  const clientName = client.spouse_name
-    ? `${client.first_name} & ${client.spouse_name} ${client.last_name}`
-    : `${client.first_name} ${client.last_name}`;
+  // Build display name — handle spouse_name that may already include last name
+  let clientName: string;
+  if (client.spouse_name) {
+    const spouseFirst = client.spouse_name.replace(new RegExp(`\\s+${client.last_name}$`, "i"), "");
+    clientName = `${client.first_name} & ${spouseFirst} ${client.last_name}`;
+  } else {
+    clientName = `${client.first_name} ${client.last_name}`;
+  }
 
   // Format date
   const onboardingDate = client.onboarding_started_at
@@ -63,7 +67,7 @@ export default async function PacketPage({
       clientName={clientName}
       onboardingDate={onboardingDate}
       personalNote={client.personal_note ?? ""}
-      advisorName={advisor?.full_name ?? "Jake Cazier, CFP\u00AE"}
+      advisorName={advisor?.full_name ?? "Jake Cazier, CFP®"}
       advisorEmail={advisor?.email ?? "jake@canyonstrategicwealth.com"}
       advisorPhone={advisor?.phone ?? "(801) 903-8287"}
       clientType={client.client_type ?? "standard"}
