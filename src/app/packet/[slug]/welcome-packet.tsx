@@ -191,10 +191,16 @@ export function WelcomePacket({
             <PipelineStage icon="🚀" label="Phase 3" badge="Weeks 3–5" title="Implementation" desc="Planning turns into action — opening accounts, transferring assets, establishing positions, and setting everything in motion." />
           </div>
           <div className="pipeline-row-connector">
-            <svg viewBox="0 0 1000 48" preserveAspectRatio="none">
+            <svg className="row-desktop-svg" viewBox="0 0 1000 48" preserveAspectRatio="none">
               <path className="prc-path" d="M920,0 L920,16 Q920,24 912,24 L88,24 Q80,24 80,32 L80,48" />
               <polygon className="prc-head" points="75,44 80,52 85,44" />
             </svg>
+            <div className="row-mobile-arrow">
+              <svg viewBox="0 0 24 24">
+                <path className="connector-path" d="M2,12 L16,12" />
+                <polygon className="connector-arrow" points="14,8 22,12 14,16" />
+              </svg>
+            </div>
           </div>
           <div className="pipeline-track">
             <PipelineStage icon="⚙️" label="Phase 4" badge="Weeks 5–8" title="Optimization" desc="We tie investments, tax strategy, and cash flow together. Your CPA joins the team so everything works holistically and tax-efficiently." />
@@ -224,10 +230,16 @@ export function WelcomePacket({
               <MeetingCard num={4} title="Investment, Tax & Cash Flow" desc="A deep dive into your investment strategy, cash flow management, and tax planning — ensuring your financial structure works efficiently." link="https://calendly.com/jakecazier/investment-plan-meeting" />
             </div>
             <div className="meeting-row-connector">
-              <svg viewBox="0 0 1000 44" preserveAspectRatio="none">
+              <svg className="row-desktop-svg" viewBox="0 0 1000 44" preserveAspectRatio="none">
                 <path className="mrc-path" d="M920,0 L920,14 Q920,22 912,22 L88,22 Q80,22 80,30 L80,44" />
                 <polygon className="mrc-head" points="75,40 80,48 85,40" />
               </svg>
+              <div className="row-mobile-arrow">
+                <svg viewBox="0 0 24 24">
+                  <path className="mfa-path" d="M2,12 L16,12" />
+                  <polygon className="mfa-head" points="14,8 22,12 14,16" />
+                </svg>
+              </div>
             </div>
             <div className="meeting-flow-row">
               <MeetingCard num={5} title="Tax Pro Introduction" desc="We coordinate tax planning with your CPA (or introduce you to a trusted one). This ensures tax efficiency across all aspects of your plan." link="https://calendly.com/jakecazier/tax-pro-intro" />
@@ -387,7 +399,7 @@ export function WelcomePacket({
           <HubCard icon="📄" color="gold" title="Investment Fact Sheets" desc="Download detailed information on the investments we recommend" badge="Download →" href="#" />
           <HubCard icon="💬" color="green" title="Quick Chat" desc="Have a quick question? Book a 15-minute call with Jake" badge="Schedule →" href="https://calendly.com/jakecazier/client-quick-chat" />
           <HubCard icon="📅" color="green" title="Client Meeting" desc="Schedule a full meeting outside the regular onboarding flow" badge="Schedule →" href="https://calendly.com/jakecazier/client-meeting-custom-calendar" />
-          <HubCard icon="⭐" color="purple" title="Leave Us a Review" desc="Your feedback means the world — share your experience on Google" badge="Review →" href="#" />
+          <HubCard icon="⭐" color="purple" title="Leave Us a Review" desc="Your feedback means the world — share your experience on Google" badge="Review →" href="https://g.page/r/CTJ13I7IB7CNEBM/review" />
         </div>
         <div className="hub-contact-row">
           <a href={`mailto:${advisorEmail}`} className="hub-btn hub-btn-primary">
@@ -718,6 +730,7 @@ const packetCSS = `
   .meeting-row-connector svg { width: 100%; height: 44px; overflow: visible; display: block; }
   .mrc-path { stroke: var(--sky); stroke-width: 2; stroke-dasharray: 5 3; fill: none; animation: flowDash 1.2s linear infinite; }
   .mrc-head { fill: var(--sky); }
+  .row-mobile-arrow { display: none; }
 
   .ongoing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
   .ongoing-card { background: var(--white); border-radius: 16px; padding: 32px 24px; border: 1px solid #E0E7EE; box-shadow: 0 2px 12px rgba(27,58,92,0.06); text-align: center; transition: transform 0.2s, box-shadow 0.2s; }
@@ -812,12 +825,16 @@ const packetCSS = `
     .welcome-grid { grid-template-columns: 1fr; }
     .pipeline-track { flex-direction: column; gap: 16px; }
     .pipeline-connector { flex: 0 0 24px; transform: rotate(90deg); }
-    .pipeline-row-connector { height: 24px; }
-    .pipeline-row-connector svg { display: none; }
+    .pipeline-row-connector { height: 24px; margin: 16px 0; display: flex; align-items: center; justify-content: center; }
+    .pipeline-row-connector .row-desktop-svg { display: none; }
+    .pipeline-row-connector .row-mobile-arrow { display: flex; align-items: center; justify-content: center; transform: rotate(90deg); }
+    .pipeline-row-connector .row-mobile-arrow svg { width: 24px; height: 24px; overflow: visible; }
     .meeting-flow-row { flex-direction: column; gap: 12px; }
     .meeting-flow-arrow { transform: rotate(90deg); flex: 0 0 24px; }
-    .meeting-row-connector { height: 24px; }
-    .meeting-row-connector svg { display: none; }
+    .meeting-row-connector { height: 24px; margin: 12px 0; display: flex; align-items: center; justify-content: center; }
+    .meeting-row-connector .row-desktop-svg { display: none; }
+    .meeting-row-connector .row-mobile-arrow { display: flex; align-items: center; justify-content: center; transform: rotate(90deg); }
+    .meeting-row-connector .row-mobile-arrow svg { width: 24px; height: 24px; overflow: visible; }
     .ongoing-grid { grid-template-columns: 1fr 1fr; }
     .next-steps-grid { grid-template-columns: 1fr; }
     .hub-grid { grid-template-columns: 1fr 1fr; }
