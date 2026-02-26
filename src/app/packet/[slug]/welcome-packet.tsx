@@ -820,14 +820,31 @@ const packetCSS = `
     .next-steps-grid { grid-template-columns: 1fr; }
     .hub-grid { grid-template-columns: 1fr 1fr; }
     .cover-meta { gap: 24px; }
+    .team-grid { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 600px) {
     .ongoing-grid { grid-template-columns: 1fr; }
     .hub-grid { grid-template-columns: 1fr; }
     .cover-meta { flex-direction: column; gap: 16px; }
-    .section { padding: 48px 6%; }
-    .cover { padding: 48px 6%; }
-    .client-hub { padding: 48px 6%; }
+    .section { padding: 40px 20px; }
+    .cover { padding: 40px 20px; min-height: auto; }
+    .client-hub { padding: 40px 20px; }
+    .section-title { font-size: 24px; }
+    .cover-title { font-size: 32px; }
+    .pipeline-node { padding: 20px 16px; }
+    .meeting-card { padding: 18px 16px 16px; }
+    .ongoing-card { padding: 24px 16px; }
+    .team-card-body { padding: 48px 16px 20px; }
+    .hub-card { padding: 20px 16px; }
+    .values-box { padding: 24px 16px; }
+    .check-group { padding: 20px 16px; }
+    .upload-cta { padding: 16px; font-size: 14px; }
+    .hub-contact-row { flex-direction: column; align-items: center; gap: 12px; }
+    .hub-btn { width: 100%; text-align: center; justify-content: center; }
+    .hub-share-bar { padding: 20px 16px; }
+    footer { padding: 40px 20px; }
+    .reflection-item { padding: 16px 20px; }
+    .coord-callout { padding: 20px; margin: 24px 0 0; font-size: 13px; }
   }
 `;
