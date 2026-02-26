@@ -316,7 +316,7 @@ export function WelcomePacket({
           </div>
         </div>
         <a
-          href="https://canyonstrategicwealth.sharefile.com"
+          href="https://canyon-strategic-wealth.app.box.com/f/d6263a01d83b4d2e937ec616963458c7"
           className="upload-cta"
           target="_blank"
           rel="noopener noreferrer"
@@ -601,7 +601,7 @@ const documentItems = [
 const actionItems = [
   { text: "Schedule your Discovery Meeting", sub: "Book on Calendly →", subLink: "https://calendly.com/jakecazier/discovery-meeting" },
   { text: "Gather your important documents", sub: "Use the checklist on the left as your guide" },
-  { text: "Upload documents securely", sub: "Secure upload portal →", subLink: "https://canyonstrategicwealth.sharefile.com" },
+  { text: "Upload documents securely", sub: "Secure upload portal →", subLink: "https://canyon-strategic-wealth.app.box.com/f/d6263a01d83b4d2e937ec616963458c7" },
   { text: "Reflect on the questions below", sub: "No right answers — just honest reflection to guide our planning" },
   { text: "Review & sign client agreement", sub: "DocuSign link sent to your email" },
 ];
