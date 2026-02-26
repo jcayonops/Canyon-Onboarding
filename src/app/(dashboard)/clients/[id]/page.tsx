@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import { StepList } from "./step-list";
+import { CopyPacketLink } from "./copy-packet-link";
 
 const phaseOrder = ["intro", "discovery", "roadmap", "implementation", "optimization", "integration", "ongoing"];
 const phaseLabels: Record<string, string> = {
@@ -43,9 +44,14 @@ export default async function ClientDetailPage({ params }: { params: Promise<{ i
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-slate-900">{client.first_name} {client.last_name}</h1>
-        <p className="text-sm text-muted-foreground">{client.email}</p>
+      <div className="flex items-start justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-slate-900">{client.first_name} {client.last_name}</h1>
+          <p className="text-sm text-muted-foreground">{client.email}</p>
+        </div>
+        {client.slug && (
+          <CopyPacketLink slug={client.slug} token={client.packet_token} />
+        )}
       </div>
 
       <div className="grid gap-4 md:grid-cols-3">
