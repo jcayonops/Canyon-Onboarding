@@ -812,10 +812,12 @@ const packetCSS = `
     .welcome-grid { grid-template-columns: 1fr; }
     .pipeline-track { flex-direction: column; gap: 16px; }
     .pipeline-connector { flex: 0 0 24px; transform: rotate(90deg); }
-    .pipeline-row-connector { display: none; }
+    .pipeline-row-connector { height: 24px; }
+    .pipeline-row-connector svg { display: none; }
     .meeting-flow-row { flex-direction: column; gap: 12px; }
     .meeting-flow-arrow { transform: rotate(90deg); flex: 0 0 24px; }
-    .meeting-row-connector { display: none; }
+    .meeting-row-connector { height: 24px; }
+    .meeting-row-connector svg { display: none; }
     .ongoing-grid { grid-template-columns: 1fr 1fr; }
     .next-steps-grid { grid-template-columns: 1fr; }
     .hub-grid { grid-template-columns: 1fr 1fr; }
